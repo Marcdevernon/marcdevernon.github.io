@@ -79,7 +79,7 @@ analytics:
 
 
 # Site Author
-author:
+author             : "Marc de Vernon"
   name             : "Marc de Vernon"
   avatar           : "MarcdeVernonFace.png"
   bio              : ""Applied Mathematician / AI / Data Science"
