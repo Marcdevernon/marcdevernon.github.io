@@ -79,10 +79,10 @@ analytics:
 
 
 # Site Author
-author             : "Marc de Vernon"
+author:
   name             : "Marc de Vernon"
   avatar           : "MarcdeVernonFace.png"
-  bio              : ""Applied Mathematician / AI / Data Science"
+  bio              : "Applied Mathematician / AI / Data Science"
   location         : "Dallas, TX"
   employer         : "Southern Methodist University"
   pubmed           : # "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
