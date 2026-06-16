@@ -106,6 +106,6 @@ we need to have the second term on the right hand side vanish.
 
 $\frac{d\stackrel {\rightharpoonup}{x}}{dt} \ =\ f(\stackrel {\rightharpoonup}{x} ,t,\mu )$
 $$ \begin{array}{l}
-{\displaystyle \stackrel {\rightharpoonup}{{\displaystyle x}}( t) \ =\ \sum _{k=1}^{n} \ \phi _{k} exp\left( \omega _{k} t\right) b_{k} \ =\ \Phi e^{ \psi{\omega}t} b}\\
+{\displaystyle \stackrel {\rightharpoonup}{ {\displaystyle x}}( t) \ =\ \sum _{k=1}^{n} \ \phi _{k} exp\left( \omega _{k} t\right) b_{k} \ =\ \Phi e^{ \psi{\omega}t} b}\\
 x( 0) \ =\ initial\ condition
 \end{array}$$
