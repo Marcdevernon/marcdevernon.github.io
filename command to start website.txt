@@ -1,0 +1,22 @@
+How to preview the site locally
+================================
+
+This site uses Homebrew's Ruby 3.3 (the macOS system Ruby 2.6 is too old).
+Ruby 3.3 is on your PATH via ~/.zshrc, so in a NEW terminal just run:
+
+    cd ~/marcdevernon.github.io
+    bundle exec jekyll serve
+
+Then open http://127.0.0.1:4000 in your browser.
+
+First time on a fresh machine / after changing the Gemfile:
+    bundle install
+
+To stop a detached server (one started with `jekyll serve --detach`):
+    pkill -f jekyll
+
+Notes
+-----
+- Pushing to the `master` branch auto-publishes to https://marcdevernon.github.io
+  (GitHub Pages builds it server-side; takes ~1 min).
+- Ruby 3.3 was installed with: brew install ruby@3.3
