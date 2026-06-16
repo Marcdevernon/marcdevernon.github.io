@@ -52,14 +52,14 @@ $$
 $$
 
 ## The Method of electrostatic images
-in this method $\varphi(x,\cdot)$ is considered the potential due to an imaginary charge q and the point $x^*$, the image of x, in the complement of $\Omega$. The charge q and the point $x^*$ have to be chosen so that $\varphi(x,\cdot)$ on $\partial\Omega$ is equal to the potential created by the unit charge in x.
+in this method $\varphi(x,\cdot)$ is considered the potential due to an imaginary charge q and the point $x^\ast$, the image of x, in the complement of $\Omega$. The charge q and the point $x^\ast$ have to be chosen so that $\varphi(x,\cdot)$ on $\partial\Omega$ is equal to the potential created by the unit charge in x.
 
 ## Example: upper half plane
 Let $\mathbb{R}_+^3=\{(x_1,x_2,x_3):x_3>0\}$
-Fix $x=(x_1,x_2,x_3)$  and observe that if we choose $x^*=(x_1,x_2,-x_3)$  then, on $y_3=0$ we have $|x^*-y|=|x-y|$
-Thus, if $x\in\mathbb{R}_+^3$, $x^*$ belongs to the complement of $\mathbb{R}_+^3$ , the function $\varphi(x,y)=\Phi(x^*-y)=\frac{1}{4\pi|x^*-y|}$ is harmonic in our domain and $\varphi(x,y)=\Phi(x-y)$ on the plane $y_3=0$ 
+Fix $x=(x_1,x_2,x_3)$  and observe that if we choose $x^\ast=(x_1,x_2,-x_3)$  then, on $y_3=0$ we have $|x^\ast-y|=|x-y|$
+Thus, if $x\in\mathbb{R}_+^3$, $x^\ast$ belongs to the complement of $\mathbb{R}_+^3$ , the function $\varphi(x,y)=\Phi(x^\ast-y)=\frac{1}{4\pi|x^\ast-y|}$ is harmonic in our domain and $\varphi(x,y)=\Phi(x-y)$ on the plane $y_3=0$ 
 therefore our greens function is
-$$G(x,y)=\frac{1}{4\pi|x-y|}-\frac{1}{4\pi|x^*-y|}$$
+$$G(x,y)=\frac{1}{4\pi|x-y|}-\frac{1}{4\pi|x^\ast-y|}$$
 
 ## Derivation and usage
 Using the basic greens identity number 5 in Salsa, and a delta function representation for a function, $u$
