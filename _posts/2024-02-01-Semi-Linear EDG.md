@@ -65,34 +65,43 @@ $$G(x,y)=\frac{1}{4\pi|x-y|}-\frac{1}{4\pi|x^*-y|}$$
 Using the basic greens identity number 5 in Salsa, and a delta function representation for a function, $u$
 we can find the Poisson's Kernel and formula for both Dirchlet and Neumann boundary conditions.
 We have 2 Identities:
-1) $\begin{equation}u(x)=\int_{\Omega}\delta(x-y)u(y)dy\end{equation}\tag{1}$
-2) $\int_{\Omega}v\Delta u - u\Delta v \space d \mathbf{x} = \int_{\partial \Omega}v\frac{\partial u} {\partial n} - u\frac{\partial v}{\partial n} d\sigma \tag{2}$ 
+
+$$u(x)=\int_{\Omega}\delta(x-y)u(y)dy \tag{1}$$
+
+$$\int_{\Omega}v\Delta u - u\Delta v \space d \mathbf{x} = \int_{\partial \Omega}v\frac{\partial u} {\partial n} - u\frac{\partial v}{\partial n} d\sigma \tag{2}$$
 
 We also have a fundamental solution $\Phi(\mathbf{x}-\mathbf{y})$, and a function $\psi(\mathbf{x},\mathbf{y})$, as above
 where $\mathbf{x}$ and $\mathbf{y}$ are points in our $d-$ dimensional space.
 
-Choose $u=u$ and $v=\Phi$ in $\tag(2)$
+Choose $u=u$ and $v=\Phi$ in (2)
 
-3) $\int_{\Omega}\Phi\Delta u - u\Delta \Phi \space d \mathbf{x} = \int_{\partial \Omega}\Phi\frac{\partial u} {\partial n} - u\frac{\partial\Phi}{\partial n} d\sigma \tag{3}$
- but $\Delta\Phi=-\delta(\mathbf{x}-\mathbf{y})$ and $\Delta u = f$ so that
-   
-4) $u(\mathbf{x}) = \int_{\partial \Omega}\Phi\frac{\partial u} {\partial n} - u\frac{\partial\Phi}{\partial n} d\sigma \tag{3}-\int_{\Omega}\Phi f$  
+$$\int_{\Omega}\Phi\Delta u - u\Delta \Phi \space d \mathbf{x} = \int_{\partial \Omega}\Phi\frac{\partial u} {\partial n} - u\frac{\partial\Phi}{\partial n} d\sigma \tag{3}$$
 
-Choose $u=u$ and $v=\psi$ in $\tag(2)$
+but $\Delta\Phi=-\delta(\mathbf{x}-\mathbf{y})$ and $\Delta u = f$ so that
 
-5) $\int_{\Omega}\psi\Delta u - u\Delta \psi \space d \mathbf{x} = \int_{\partial \Omega}\psi\frac{\partial u} {\partial n} - u\frac{\partial\psi}{\partial n} d\sigma \tag{3}$  but $\Delta\psi=0$ and $\Delta u = f$ , and switching the signs:
- 
-6) $0 = -\int_{\partial \Omega}\psi\frac{\partial u} {\partial n} + u\frac{\partial\psi}{\partial n} d\sigma \tag{3}+\int_{\Omega}\psi f$  
+$$u(\mathbf{x}) = \int_{\partial \Omega}\Phi\frac{\partial u} {\partial n} - u\frac{\partial\Phi}{\partial n} d\sigma -\int_{\Omega}\Phi f \tag{4}$$
 
-If we add 4) and 6) and note that $\frac{\partial G}{\partial n}=\nabla G \cdot \mathbf{n}$ 
+Choose $u=u$ and $v=\psi$ in (2)
+
+$$\int_{\Omega}\psi\Delta u - u\Delta \psi \space d \mathbf{x} = \int_{\partial \Omega}\psi\frac{\partial u} {\partial n} - u\frac{\partial\psi}{\partial n} d\sigma \tag{5}$$
+
+but $\Delta\psi=0$ and $\Delta u = f$ , and switching the signs:
+
+$$0 = -\int_{\partial \Omega}\psi\frac{\partial u} {\partial n} + u\frac{\partial\psi}{\partial n} d\sigma +\int_{\Omega}\psi f \tag{6}$$
+
+If we add (4) and (6) and note that $\frac{\partial G}{\partial n}=\nabla G \cdot \mathbf{n}$ 
 We can get Poisson's equation.  
 For the Dirchlet case: $u(\mathbf{x})=g(\mathbf{x})$ and $G(\mathbf{x},\mathbf{y})=0$ on the boundary.
-$u(\mathbf{x}) = - \int_{\partial\Omega}g(\mathbf{\sigma})\nabla G(\mathbf{x},\mathbf{\sigma})\cdot\mathbf{n}\space d\sigma \tag{3}-\int_{\Omega}G (\mathbf{x},\mathbf{y})f(\mathbf{y}) \space d \mathbf{y}$
+
+$$u(\mathbf{x}) = - \int_{\partial\Omega}g(\mathbf{\sigma})\nabla G(\mathbf{x},\mathbf{\sigma})\cdot\mathbf{n}\space d\sigma -\int_{\Omega}G (\mathbf{x},\mathbf{y})f(\mathbf{y}) \space d \mathbf{y} \tag{7}$$
+
 Note that $-\nabla G(\mathbf{x},\sigma)$ is called "Poissons' Kernel." In the case that $f=0$, we have just a single term.
 
 For the Neumann case:
 Starting from here
-$u(\mathbf{x}) = \int_{\partial \Omega}G\frac{\partial u} {\partial n} - u\frac{\partial G}{\partial n} d\sigma \tag{3}-\int_{\Omega}G f$
+
+$$u(\mathbf{x}) = \int_{\partial \Omega}G\frac{\partial u} {\partial n} - u\frac{\partial G}{\partial n} d\sigma -\int_{\Omega}G f \tag{8}$$
+
 we need to have the second term on the right hand side vanish. 
 
 $\frac{d\stackrel {\rightharpoonup}{x}}{dt} \ =\ f(\stackrel {\rightharpoonup}{x} ,t,\mu )$
